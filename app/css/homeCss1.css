@@ -1,0 +1,76 @@
+#i1,#i2{
+	text-align: right;
+}
+
+#myapi{
+	margin-top : 10px;
+}
+
+#loginpage,#registerpage{
+	margin-top : 100px;
+}
+
+.scrollable {
+	height : 310px;
+	max-width: 100%;
+	overflow-y : auto;
+}
+
+#spaceBetween {
+	margin-left : 35px;
+}
+
+.page-header {
+	border-color: #262626;
+}
+
+#spaceBetween {
+	margin-bottom:3px;
+}
+
+#no-task-added {
+	 text-align:center;
+	  line-height:35px;
+	  height: 35px;
+	   padding:0px 150px;
+	    margin-top:0px; 
+		 margin-left:20px; 
+		margin-right:20px;
+		text-align:center;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+#Pending{
+	background-color:#ff9999;//#ff8080;
+	margin-right:5em;
+	margin-left:4em;
+	margin-top: 1em;
+}
+
+#Ongoing {
+	background-color:#ebebe0;//lavender;
+	margin-right:5em;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+#Completed {
+	background-color:#ccffcc;//#80ff80;
+	margin-right:5em;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+#Future{
+	background-color : #e6faff;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+#showDataOnNextLine {
+	width:90px;
+	word-wrap: break-all;
+	word-wrap: break-word;
+}

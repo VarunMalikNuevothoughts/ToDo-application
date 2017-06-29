@@ -1,0 +1,94 @@
+  <!-- Alert for deleting user entry -->
+<!--  
+<!--     <div ng-show="booltoshowalert">
+    <div id="le-alert" class="alert alert-danger alert-block fade">
+      <button href="#" type="button" class="close">&times;</button>
+      <h5 id="toclose">Are you sure, you wnat to delete! <a href ng-click="deletedata()"> Yes </a> <a href> No </a></h5>
+	  
+	</div>
+
+ -->
+ <div style="position:static;height:50px;">
+<!--Code if user registers successfully, asks to login -->
+<div class="container">
+<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+     <div class="alert alert-success alert-dismissible" id="success-alert-register" ng-show="showRegister" style="margin-bottom: 1px; height: 35px;  line-height:35px;  padding:0px 15px; margin-top:10px;text-align:center">
+   <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+    <h5 id="toclosefromregisterpage">You are successfully registered.Please <a href ng-click="callingloginCtrl()">Login </a> to continue   </h5>
+  </div>
+  </div>
+</div>
+
+<!--Code if user fails to register -->
+<div class="container">
+<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+     <div class="alert alert-danger alert-dismissible" id="success-alert-register-error" ng-show="showRegistererror"  style="margin-bottom: 1px; height: 35px;  line-height:35px;  padding:0px 15px; margin-top:10px;text-align:center">
+    <!--<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>-->
+    <h5 id="toclosefromregisterpageerror">This email already exists.Please try other one</h5>
+  </div>
+  </div>
+</div>
+</div>
+<!--
+<div style="position:static;height:50px;"> 
+<div class="container" >
+<div class="col-sm-6 col-sm-offset-3" >
+     <div class="alert alert-danger alert-dismissible" id="success-alert" ng-show="show"   style="margin-bottom: 1px; height: 32px;  line-height:32px;  padding:0px 15px; margin-top:10px;text-align:center">
+    <!--<a href class="close"  aria-label="close" >&times;</a
+    Please provide valid email and password.
+  </div>
+  </div>
+  </div>
+</div>
+-->
+
+<div class="container">
+    <div class="row">
+		<div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+    		<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Please Register</h3>
+			 	</div>
+			  	<div class="panel-body">
+			    	<form accept-charset="UTF-8" role="form">
+                    <fieldset>
+			    	  	<div class="form-group">
+			    		    <input class="form-control" placeholder="Username" name="email" ng-model="user1.username" type="text" required>
+			    		</div>
+						<div class="form-group">
+			    		    <input class="form-control" placeholder="E-mail" name="email" ng-model="user1.email" type="email" required>
+			    		</div>
+			    		<div class="form-group">
+			    			<input class="form-control" placeholder="Password" name="password" ng-model="user1.password" type="password" value="" required>
+			    		</div>
+			    				    	    	
+			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Register" ng-click="register(user1)">
+						<div><a  href ng-click="callingloginCtrl()" >Have Account? Login</a></div>
+			    	</fieldset>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--
+<form id="registerpage"  class="form-horizontal">  
+ 
+    <div class="form-group"> <label class="col-lg-3 col-xs-3 control-label">Username</label>  
+        <div class="col-lg-5 col-xs-5"> <input type="text" ng-model="user1.username" class="form-control" name="username" required/> </div>  
+    </div>  
+    <div class="form-group"> <label class="col-lg-3 col-xs-3 control-label">Email</label>  
+        <div class="col-lg-5 col-xs-5"> <input type="email" ng-model="user1.email" class="form-control" name="email" required/> </div>  
+    </div>  
+    <div class="form-group"> <label class="col-lg-3 col-xs-3 control-label">Password</label>  
+        <div class="col-lg-5 col-xs-5"> <input type="password" ng-model="user1.password" class="form-control" name="password" required/> </div>  
+    </div>  
+    <div class="form-group">  
+        <div class="col-lg-4 col-lg-offset-3 col-xs-4 col-xs-offset-3"> <button type="submit" class="btn btn-primary" id="open-register-alert" ng-disabled="myfunction(user1.email,user1.password)" ng-click="register(user1)">Register</button> </div>  
+
+	<div class="col-lg-4  col-xs-4"><a href ng-click="callingloginCtrl()" >Have Account? Login</a></div>
+    </div>  
+</form> 
+-->

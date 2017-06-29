@@ -1,0 +1,54 @@
+<!--<div class="container">
+<div class="col-sm-7 col-sm-offset-2">
+<div id="le-alert" class="alert alert-danger" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  Please provide valid email and password!
+</div>
+</div>
+</div>
+-->
+<!--
+<div class="alert alert-danger collapse" role="alert" id="passwordsNoMatchRegister">
+  <span>
+  <p>Looks like the passwords you entered don't match!</p>
+  </span> 
+</div>
+-->
+<div style="position:static;height:50px;"> 
+<div class="container" >
+<div class="col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3 col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3" >
+     <div class="alert alert-danger alert-dismissible" id="success-alert" ng-show="show"   style="margin-bottom: 1px; height: 35px;  line-height:35px;  padding:0px 15px; margin-top:10px;text-align:center">
+    <!--<a href class="close"  aria-label="close" >&times;</a-->
+    Please provide valid email and password.
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="container" >
+    <div class="row">
+		<div class=" col-xs-4 col-xs-offset-4  col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+    		<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Please Login</h3>
+			 	</div>
+			  	<div class="panel-body">
+			    	<form accept-charset="UTF-8" role="form">
+                    <fieldset>
+			    	  	<div class="form-group">
+			    		    <input class="form-control" placeholder="E-mail" name="email" ng-model="user.email" type="email" required>
+			    		</div>
+			    		<div class="form-group">
+			    			<input class="form-control" placeholder="Password" name="password" ng-model="user.password" type="password" value="" required>
+			    		</div>
+			    				    	    	
+			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="{{loginValue}}" ng-model="loginValue" ng-click="login(user)" id="the-thing-that-opens-your-alert3">
+						<div><a href ng-click="gotologinpage()">New? Register</a></div>
+			    	</fieldset>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>

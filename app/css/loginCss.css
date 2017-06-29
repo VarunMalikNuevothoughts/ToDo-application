@@ -1,0 +1,10 @@
+body{padding-top:20px;}
+#DateandAddInline{
+
+	text-align : right
+}
+
+textarea {
+    max-width: 100%;
+	max-height : 200px 
+}
